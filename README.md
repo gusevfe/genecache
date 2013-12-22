@@ -19,6 +19,7 @@ Or install it yourself as:
 ## Usage
 
     require 'genecache'
+
     GeneCache.convert('hsa', 'ensg_id', 'omim_id', 'ENSG00000142192') # APP 
     # returns ['104300', '104760', '605714']
 
