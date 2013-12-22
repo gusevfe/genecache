@@ -16,6 +16,13 @@ Or install it yourself as:
 
     $ gem install genecache
 
+If SQLite is installed in a non-default location, then:
+
+    $ gem install sqlite3 -- \
+        --with-sqlite3-include=$SQLITE3/include \
+        --with-sqlite3-lib=$SQLITE3/lib
+    $ gem install genecache
+
 ## Usage
 
     require 'genecache'
