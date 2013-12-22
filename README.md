@@ -1,6 +1,6 @@
 # Genecache
 
-TODO: Write a gem description
+Simple and fast conversion of GENE IDs. Major source of data is http://biodb.jp. Conversion tables are downloaded and stored in local SQLite database for very fast access.
 
 ## Installation
 
@@ -18,7 +18,8 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    GeneCache.convert('hsa', 'ensg_id', 'omim_id', 'ENSG00000142192') # APP 
+    # returns ['104300', '104760', '605714']
 
 ## Contributing
 
@@ -26,4 +27,4 @@ TODO: Write usage instructions here
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+5. t Create new Pull Request
