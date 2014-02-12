@@ -4,7 +4,7 @@ Simple and fast conversion of GENE IDs. Conversion tables are downloaded and sto
 
 Two sources are supported right now:
 * Hyperlink management system (http://biodb.jp)
-* Mouse genome informatics (http://http://www.informatics.jax.org)
+* Mouse genome informatics (http://www.informatics.jax.org)
 
 ## Installation
 
