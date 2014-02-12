@@ -1,6 +1,10 @@
 # Genecache
 
-Simple and fast conversion of GENE IDs. Major source of data is http://biodb.jp. Conversion tables are downloaded and stored in local SQLite database for very fast access.
+Simple and fast conversion of GENE IDs. Conversion tables are downloaded and stored in local SQLite database for very fast access.
+
+Two sources are supported right now:
+* Hyperlink management system (http://biodb.jp)
+* Mouse genome informatics (http://http://www.informatics.jax.org)
 
 ## Installation
 
@@ -27,8 +31,11 @@ If SQLite is installed in a non-default location, then:
 
     require 'genecache'
 
-    GeneCache.convert('hsa', 'ensg_id', 'omim_id', 'ENSG00000142192') # APP 
+    GeneCache.convert('biodb::hsa', 'ensg_id', 'omim_id', 'ENSG00000142192') # APP 
     # returns ['104300', '104760', '605714']
+
+    GeneCache.convert('mgi', 'mgi_accession', 'ensembl_id', '87853')
+    # returns ['ENSMUSG00000027596']
 
 ## Contributing
 
